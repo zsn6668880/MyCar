@@ -1,6 +1,6 @@
 #include "MPU6050.h"
 
-
+//用了Simp_MPU6050这个库，记着安装这个库
 void setup(){
     Serial.begin(9600);
     MPU6050::init();
