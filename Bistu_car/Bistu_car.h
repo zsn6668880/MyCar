@@ -4,11 +4,10 @@
 #define DEC 6000
 #define LAP_A 260000
 #define LAP_B 260000
-#define MAXSPEED 8000
-#define Wheel_spacing 8//轴距
+#define MAXSPEED 20000
+#define Wheel_spacing 2.75//轴距
 #define Wheel_axlespacing 15//轮距
-
-extern double vx,vy, vz;
+#define Wheel_R 5
 
 namespace Car{
     void test(double pos);
@@ -19,9 +18,6 @@ namespace Car{
     void setMaxSpeed(int speed);
     void setDis(int dis);
     void setPos(int pos);
-    void back(int speed);
-    void left(int speed);
-    void isStop(bool* is);
-    void getSpeed();
+    void setSpeed_four_wheel(double vx,double vz);
 };
 
